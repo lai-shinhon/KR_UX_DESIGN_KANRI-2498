@@ -10,70 +10,63 @@
     <style type="text/tailwindcss">
         @layer base {
             @font-face {
-                font-family: "Hiragino Sans";
+                font-family: "HiraginoSansFix";
                 font-weight: 100;
                 src:
                     local(HiraginoSans-W0),
-                    local("Hiragino Sans W0");
-            }
-            @font-face {
-                font-family: "Hiragino Sans";
-                font-weight: 200;
-                src:
-                    local(HiraginoSans-W1),
                     local("Hiragino Sans W1");
             }
             @font-face {
-                font-family: "Hiragino Sans";
-                font-weight: 250;
+                font-family: "HiraginoSansFix";
+                font-weight: 200;
                 src:
-                    local(HiraginoSans-W2),
+                    local(HiraginoSans-W1),
                     local("Hiragino Sans W2");
             }
             @font-face {
-                font-family: "Hiragino Sans";
+                font-family: "HiraginoSansFix";
                 font-weight: 300;
                 src:
                     local(HiraginoSans-W3),
                     local("Hiragino Sans W3");
             }
             @font-face {
-                font-family: "Hiragino Sans";
+                font-family: "HiraginoSansFix";
                 font-weight: 400;
                 src:
                     local(HiraginoSans-W4),
                     local("Hiragino Sans W4");
             }
             @font-face {
-                font-family: "Hiragino Sans";
+                font-family: "HiraginoSansFix";
                 font-weight: 500;
                 src:
                     local(HiraginoSans-W5),
                     local("Hiragino Sans W5");
             }
             @font-face {
-                font-family: "Hiragino Sans";
+                font-family: "HiraginoSansFix";
                 font-weight: 600;
                 src:
                     local(HiraginoSans-W6),
                     local("Hiragino Sans W6");
             }
             @font-face {
-                font-family: "Hiragino Sans";
+                font-family: "HiraginoSansFix";
                 font-weight: 700;
                 src:
                     local(HiraginoSans-W7),
                     local("Hiragino Sans W7");
             }
             @font-face {
-                font-family: "Hiragino Sans";
+                font-family: "HiraginoSansFix";
                 font-weight: 800;
                 src:
                     local(HiraginoSans-W8),
                     local("Hiragino Sans W8");
             }
             @font-face {
-                font-family: "Hiragino Sans";
+                font-family: "HiraginoSansFix";
                 font-weight: 900;
                 src:
                     local(HiraginoSans-W9),
@@ -84,6 +77,7 @@
         @theme {
             --font-sans: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif;
             --font-hiragino: 'Hiragino Sans', 'Meiryo', sans-serif;
+            --font-hiragino-fix: 'HiraginoSansFix', 'Hiragino Sans', 'Meiryo', sans-serif;
             --font-notosans: 'Noto Sans JP', sans-serif;
         }
     </style>
@@ -91,108 +85,150 @@
 
 <body>
     <div class="container mx-auto">
-        <div class="md:flex gap-5">
+        <div class="md:flex flex-wrap -mx-2 pb-10">
             <!-- 通常 -->
-            <section class="bg-slate-50 p-5 mt-10 rounded-lg">
-                <h2 class="text-3xl">WEB フォントの検証</h2>
-                <h3 class="text-xl mt-3">Hiragino Kaku Gothic ProN</h3>
-                <ul class="mt-5">
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-thin">100 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-extralight">200 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-light">300 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-normal">400 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-medium">500 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-semibold">600 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-bold">700 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-extrabold">800 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-black">900 採用責任者からのお知らせ</p>
-                    </li>
-                </ul>
+            <section class="mt-10 md:w-1/2 px-2">
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <h2 class="text-3xl">WEB フォントの検証</h2>
+                    <h3 class="text-xl mt-3">Hiragino Kaku Gothic ProN</h3>
+                    <ul class="mt-5">
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-thin">100 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-extralight">200 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-light">300 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-normal">400 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-medium">500 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-semibold">600 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-bold">700 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-extrabold">800 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-black">900 採用責任者からのお知らせ</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <!-- hiragino sans -->
-            <section class="bg-slate-50 p-5 mt-10 rounded-lg font-hiragino">
-                <h2 class="text-3xl">WEB フォントの検証</h2>
-                <h3 class="text-xl mt-3">Hiragino Sans</h3>
-                <ul class="mt-5">
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-thin">100 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-extralight">200 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-light">300 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-normal">400 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-medium">500 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-semibold">600 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-bold">700 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-extrabold">800 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-black">900 採用責任者からのお知らせ</p>
-                    </li>
-                </ul>
+            <section class="mt-10 md:w-1/2 px-2 font-hiragino">
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <h2 class="text-3xl">WEB フォントの検証</h2>
+                    <h3 class="text-xl mt-3">Hiragino Sans</h3>
+                    <ul class="mt-5">
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-thin">100 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-extralight">200 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-light">300 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-normal">400 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-medium">500 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-semibold">600 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-bold">700 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-extrabold">800 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-black">900 採用責任者からのお知らせ</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <!-- hiragino sans -->
+            <section class="mt-10 md:w-1/2 px-2 font-hiragino-fix">
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <h2 class="text-3xl">WEB フォントの検証</h2>
+                    <h3 class="text-xl mt-3">Hiragino Sans fix</h3>
+                    <ul class="mt-5">
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-thin">100 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-extralight">200 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-light">300 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-normal">400 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-medium">500 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-semibold">600 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-bold">700 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-extrabold">800 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-black">900 採用責任者からのお知らせ</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
             <!-- noto sans -->
-            <section class="bg-slate-50 p-5 mt-10 rounded-lg font-notosans">
-                <h2 class="text-3xl">WEB フォントの検証</h2>
-                <h3 class="text-xl mt-3">Noto Sans</h3>
-                <ul class="mt-5">
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-thin">100 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-extralight">200 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-light">300 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-normal">400 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-medium">500 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-semibold">600 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-bold">700 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-extrabold">800 採用責任者からのお知らせ</p>
-                    </li>
-                    <li>
-                        <p class="mt-3 text-2xl/10 font-black">900 採用責任者からのお知らせ</p>
-                    </li>
-                </ul>
+            <section class="mt-10 md:w-1/2 px-2 font-notosans">
+                <div class="bg-slate-50 p-5 rounded-lg">
+                    <h2 class="text-3xl">WEB フォントの検証</h2>
+                    <h3 class="text-xl mt-3">Noto Sans</h3>
+                    <ul class="mt-5">
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-thin">100 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-extralight">200 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-light">300 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-normal">400 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-medium">500 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-semibold">600 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-bold">700 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-extrabold">800 採用責任者からのお知らせ</p>
+                        </li>
+                        <li>
+                            <p class="mt-3 text-2xl/10 font-black">900 採用責任者からのお知らせ</p>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </div>
     </div>
